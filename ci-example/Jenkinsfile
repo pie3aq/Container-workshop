@@ -27,7 +27,7 @@ pipeline {
                       --build-arg MYSQL_DATABASE=${params.MYSQL_DATABASE} \
                       --build-arg MYSQL_USER=${params.MYSQL_USER} \
                       --build-arg MYSQL_PASSWORD=${params.MYSQL_PASSWORD} \
-                      .
+                      ci-example/.
                     """
                 }
             }
