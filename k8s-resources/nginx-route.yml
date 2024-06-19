@@ -1,0 +1,14 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: nginx-route
+  namespace: webapp
+spec:
+  host: webapp.apps.ocp-sno-lab.mp.test
+  to:
+    kind: Service
+    name: nginx-service
+    weight: 100
+  port:
+    targetPort: 8080
+  wildcardPolicy: None
