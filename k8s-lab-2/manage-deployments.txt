@@ -1,0 +1,20 @@
+#Utworzenie deploymentu
+kubectl create deployment <nazwa-deployment> --image=<nazwa-obrazu>:<tag-obrazu>
+
+#Listowanie deploymentow w obecnym namespace
+kubectl get deployment 
+
+#Uzyskanie szczegolowego opisu yaml wskazaniego deployment
+kubectl get deployment <nazwa-deployment> -o yaml
+
+#Utworzenie deploymentu (lub dowolnego innego zasobu k8s) z pliku yaml
+oc create -f <nazwa-pliku>.yml
+
+#Utworzenie lub wprowadzenie zmian w zasobie
+oc apply -f <nazwa-pliku>.yml
+
+#Zastąpienie zasobu
+oc replace -f <nazwa-pliku>.yml
+
+#Usuniecie na klastrze zasobu zdefiniowanego w pliku
+oc delete -f <nazwa-pliku>.yml
