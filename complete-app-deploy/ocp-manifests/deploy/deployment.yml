@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql-deployment
-  namespace: developer-workspace
+  namespace: student-workspace
 spec:
   replicas: 1
   selector:

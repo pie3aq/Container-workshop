@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: mysql-pvc
-  namespace: developer-workspace
+  namespace: student-workspace
 spec:
   accessModes:
     - ReadWriteOnce

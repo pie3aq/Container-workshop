@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: LimitRange
 metadata:
-  name: developer-limits
-  namespace: developer-workspace
+  name: student-limits
+  namespace: student-workspace
 spec:
   limits:
     - type: Pod

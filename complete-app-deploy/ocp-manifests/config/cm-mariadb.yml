@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mariadb-cnf-config
-  namespace: developer-workspace
+  namespace: student-workspace
 data:
   mariadb.cnf: |
     [client-server]
