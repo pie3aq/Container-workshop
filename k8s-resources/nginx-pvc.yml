@@ -4,6 +4,7 @@ metadata:
   name: nginx-pvc
   namespace: webapp
 spec:
+  storageClassName: vsphere-csi
   accessModes:
     - ReadWriteOnce
   resources:

@@ -35,8 +35,8 @@ cat <<EOF > /usr/share/nginx/html/index.html
 </head>
 <body>
     <div class="container">
-        <h1>Witaj z Openshifta!</h1>
-        <p>Jezeli ten plik umiescisz w persistentStorage, pozostanie na OCP mimo usuniecia poda</p>
+        <h1>Witaj z Kubernetesa!</h1>
+        <p>Jezeli ten plik umiescisz w persistentStorage, pozostanie na k8s mimo usuniecia poda</p>
     </div>
 </body>
 </html>
